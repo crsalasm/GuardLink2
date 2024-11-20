@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar class="color-principal">
+      <ion-title id="tPrincipal">GuardLink</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h1 class="tittle-text ion-text-center">REGISTER</h1>
+
+<ion-content>
+  <div class="container">
+    <ion-img src="assets/images/logoapp.svg"></ion-img>
+
+    <h2 class="footer-textt large-img">Registro</h2>
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type="text" name="username" [(ngModel)]="user.username" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="user.email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="user.password" required></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" type="submit">Registrar</ion-button>
+      <ion-button expand="block" [routerLink]="['/login']">Ya tengo una cuenta</ion-button>
+    </form>
+  </div>
+
+  <h1 class="footer-text ion-text-center">www.GuardLink.cl</h1>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="color-principal">
+      <ion-title id="tPrincipal">GuardLink</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h1 class="tittle-text ion-text-center">REPORTES</h1>
+
+<ion-content class="ion-padding">
+
+  <ion-img class="large-img" src="assets/images/logoapp.svg"></ion-img>
+
+  <div class="chat-container">
+    <div class="messages" *ngFor="let message of messages">
+      <div class="message" [ngClass]="{'sent': message.sent, 'received': !message.sent}">
+        <span>{{ message.text }}</span>
+        <span class="message-time">{{ message.time }}</span> 
+      </div>
+    </div>
+  </div>
+
+  <ion-item class="ion-margin-top chat-input">
+    <ion-input [(ngModel)]="newMessage" placeholder="Escribe tu reporte..."></ion-input>
+    <ion-button class="color-principal" (click)="sendMessage()">Enviar</ion-button>
+  </ion-item>
+
+
+  <ion-button class="ion-margin-top color-principal" expand="block" routerLink="/inicio">Volver atras</ion-button>
+  <h1 class="footer-text ion-text-center">www.GuardLink.cl</h1>
+
+</ion-content>
+
+

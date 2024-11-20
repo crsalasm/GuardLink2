@@ -1,0 +1,35 @@
+.footer-text {
+    font-size: 16px;  // Ajusta el tamaño del texto según sea necesario
+    color: #000000;  // Cambia el color del texto si es necesario
+}
+
+.footer-textt {
+    color: #000000;  // Cambia el color del texto si es necesario
+}
+
+.large-img {
+  width: 103%;
+  max-width: 500px; 
+  height: auto; 
+  margin-right: 100px;
+}
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  ion-item {
+    margin: 10px 0;
+  }
+
+  ion-button {
+    margin-top: 20px;
+    --background: #00bcd4;
+    --background-hover: #0cd4ee;
+  }

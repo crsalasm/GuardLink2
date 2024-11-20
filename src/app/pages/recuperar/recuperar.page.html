@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar class="color-principal">
+    <ion-title class="ion-text-center">GuardLink</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<h1 class="tittle-text ion-text-center">RECOVER PASSWORD</h1>
+
+<ion-content class="ion-padding">
+  <ion-img src="assets/images/img2.svg"></ion-img>
+
+  <ion-text>
+    <p class="color-1">Ingrese sus datos:</p>
+  </ion-text>
+
+  <ion-item>
+    <ion-icon name="mail-outline"></ion-icon>
+    <ion-input label="Correo" label-placement="floating" fill="solid" [(ngModel)]="Correo" class="ion-margin-start"></ion-input>
+  </ion-item>
+
+  <ion-item class="ion-margin-top">
+    <ion-icon name="keypad-outline"></ion-icon>
+    <ion-input label="Nueva Contrasena" label-placement="floating" fill="solid" type="password" [(ngModel)]="NuevaContrasena" class="ion-margin-start"></ion-input>
+  </ion-item>
+
+  <ion-button class="color-principal" expand="full" (click)="validarDatos()"> Confirmar </ion-button>
+  
+</ion-content>

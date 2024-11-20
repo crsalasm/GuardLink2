@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar class="color-principal">
+        <ion-title class="ion-text-center">GuardLink</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    
+    <ion-text>
+        <h2 class="ion-text-center texto-bienvenida">Bienvenido a nuestra App "{{ inicioUsuario }}"</h2>
+    </ion-text>
+    
+    <ion-img src="assets/images/img3.svg"></ion-img>
+    
+    <ion-text>
+        <h2 class="color-1 ">Menu de aplicacion: </h2>
+    </ion-text>
+
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/ubicacion']">Ubicacion Tiempo Real </ion-button> 
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/horario']">Horario</ion-button> 
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/mensajes']">Mensajes </ion-button> 
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/historial']">Historial </ion-button> 
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/reportes']">Reportes </ion-button> 
+    <ion-button expand="block" class="ion-margin-top color-principal" [routerLink]="['/boton']">Boton Panico!</ion-button> 
+
+    <h1 class="footer-textt ion-text-center">www.GuardLink.cl</h1>
+
+</ion-content>
